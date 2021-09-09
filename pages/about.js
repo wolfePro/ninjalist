@@ -1,11 +1,11 @@
-import Head from "next/head";
+import Head from 'next/head';
 
 const About = () => {
   return (
     <>
       <Head>
-        <title>Ninja List | About</title>
-        <meta name="keywords" content="Ninjas"></meta>
+        <title>Project List | About</title>
+        <meta name="keywords" content="Projects"></meta>
       </Head>
       <div>
         <h1>About</h1>

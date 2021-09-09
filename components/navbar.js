@@ -1,5 +1,5 @@
-import Link from "next/link";
-import Image from "next/image";
+import Link from 'next/link';
+import Image from 'next/image';
 
 const Navbar = () => {
   return (
@@ -13,8 +13,8 @@ const Navbar = () => {
       <Link href="/about">
         <a>About</a>
       </Link>
-      <Link href="/ninjas">
-        <a>Ninja Listing</a>
+      <Link href="/projects">
+        <a>Projects Listing</a>
       </Link>
     </nav>
   );

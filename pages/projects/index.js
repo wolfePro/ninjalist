@@ -1,4 +1,4 @@
-import styles from '../../styles/Ninjas.module.css';
+import styles from '../../styles/projects.module.css';
 import Link from 'next/link';
 
 export const getStaticProps = async () => {
@@ -6,18 +6,18 @@ export const getStaticProps = async () => {
   const data = await res.json();
 
   return {
-    props: { ninjas: data }
+    props: { projects: data }
   };
 };
 
-const Ninjas = ({ ninjas }) => {
+const projects = ({ projects }) => {
   return (
     <div>
-      <h1>All Ninjas</h1>
-      {ninjas.map((ninja) => (
-        <Link href={'/ninjas/' + ninja.id} key={ninja.id}>
+      <h1>All projects</h1>
+      {projects.map((project) => (
+        <Link href={'/projects/' + project.id} key={project.id}>
           <a className={styles.single}>
-            <h3>{ninja.name}</h3>
+            <h3>{project.name}</h3>
           </a>
         </Link>
       ))}
@@ -25,4 +25,4 @@ const Ninjas = ({ ninjas }) => {
   );
 };
 
-export default Ninjas;
+export default projects;
